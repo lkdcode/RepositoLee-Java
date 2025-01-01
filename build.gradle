@@ -1,0 +1,10 @@
+plugins {
+    id 'java'
+}
+
+group 'repositolee.lkdcode'
+version 'v1.0'
+
+repositories {
+    mavenCentral()
+}
