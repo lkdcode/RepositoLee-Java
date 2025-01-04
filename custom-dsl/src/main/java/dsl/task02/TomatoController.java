@@ -9,7 +9,7 @@ class TomatoController {
     TomatoController(TomatoService tomatoService) {
         this.tomatoService = tomatoService;
     }
-s
+
     public void retrieveAll() {
         print(tomatoService::findAll);
     }
