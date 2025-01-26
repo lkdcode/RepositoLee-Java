@@ -1,4 +1,4 @@
-# 🎯 Final 키워드
+# 🎯 final 키워드
 
 Java 에서 `final` 키워드는 변수, 메서드, 클래스에서 사용되며 각각 다른 의미를 가진다.  
 메서드와 클래스는 실제 상속과 관련된 제한을 하며 부수적으로 명시적인 의도를 표현한다.  
@@ -44,16 +44,16 @@ public static void primitive() {
 ```
 
 `final int target` 을 매개변수로 넘겨주더라도 복사본으로 넘기기 때문에 그 범위는 넘기기전 메서드 바디까지만 허용된다.  
-또 `sum()` 메서드에서는 매개변수 `int a`를 `final` 로 정의하지 않았기 때문에 재할당이 가능한 것이다.  
+또 `sum()` 메서드에서는 매개변수 `int service`를 `final` 로 정의하지 않았기 때문에 재할당이 가능한 것이다.  
 
 ```java
 class FinalExam {
 
-    public static int sum(int a) {
-        a += 3;
-        a += 10;
-        a += 50;
-        return a + 5;
+    public static int sum(int service) {
+        service += 3;
+        service += 10;
+        service += 50;
+        return service + 5;
     }
 
     public static void main(String[] args) {
@@ -109,36 +109,36 @@ public static void main(String[] args) {
     }
 ```
 
-`Arrays.asList()` 는 조금 다른데 기존의 상태는 변경할 수 있지만 새로운 상태에 대한 변경은 불가하다.  
+`Arrays.asList()` 는 조금 다른데 기존의 상태는 변경할 수 있지만 새로운 상태에 대한 변경은 불가하다.
 
 ```java
-public abstract class AbstractList<E> extends AbstractCollection<E> implements List<E> {  
-     public boolean add(E e) {  
-        add(size(), e);  
-        return true;  
-    }  
-  
-    public abstract E get(int index);  
-  
-    public E set(int index, E element) {  
-        throw new UnsupportedOperationException();  
-    }  
-  
-    public void add(int index, E element) {  
-        throw new UnsupportedOperationException();  
-    }  
-  
-    public E remove(int index) {  
-        throw new UnsupportedOperationException();  
+public abstract class AbstractList<E> extends AbstractCollection<E> implements List<E> {
+    public boolean add(E e) {
+        add(size(), e);
+        return true;
+    }
+
+    public abstract E get(int index);
+
+    public E set(int index, E element) {
+        throw new UnsupportedOperationException();
+    }
+
+    public void add(int index, E element) {
+        throw new UnsupportedOperationException();
+    }
+
+    public E remove(int index) {
+        throw new UnsupportedOperationException();
     }
 
     // java.util.Arrays.ArrayList
-@Override
-public E set(int index, E element) {
-    E oldValue = a[index];
-    a[index] = element;
-    return oldValue;
-}
+    @Override
+    public E set(int index, E element) {
+        E oldValue = service[index];
+        service[index] = element;
+        return oldValue;
+    }
 ```
 
 Arrays.asList() 와 List.of() 의 차이는 간략하게 아래와 같다.

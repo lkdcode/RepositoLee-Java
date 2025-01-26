@@ -2,4 +2,5 @@ rootProject.name = 'RepositoLee-Java'
 include 'funtional-interface'
 include 'custom-dsl'
 include 'keyword-final'
+include 'keyword-var'
 
