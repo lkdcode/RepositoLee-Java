@@ -3,4 +3,5 @@ include 'funtional-interface'
 include 'custom-dsl'
 include 'keyword-final'
 include 'keyword-var'
+include 'auto-boxing-unboxing'
 
