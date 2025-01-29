@@ -1,0 +1,439 @@
+java -jar auto-boxing-unboxing-v1.0-jmh.jar
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.autoBoxingExecute
+# Parameters: (max = 1000000000)
+
+# Run progress: 0.00% complete, ETA 00:30:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 6733.894 ms/op
+# Warmup Iteration   2: 9154.405 ms/op
+# Warmup Iteration   3: 7921.632 ms/op
+# Warmup Iteration   4: 11100.236 ms/op
+# Warmup Iteration   5: 11443.612 ms/op
+Iteration   1: 8328.084 ms/op
+Iteration   2: 9281.701 ms/op
+Iteration   3: 7783.819 ms/op
+Iteration   4: 10784.838 ms/op
+Iteration   5: 7441.483 ms/op
+
+# Run progress: 5.56% complete, ETA 00:41:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 8348.265 ms/op
+# Warmup Iteration   2: 10944.500 ms/op
+# Warmup Iteration   3: 14749.569 ms/op
+# Warmup Iteration   4: 8402.237 ms/op
+# Warmup Iteration   5: 8068.816 ms/op
+Iteration   1: 10546.854 ms/op
+Iteration   2: 6090.493 ms/op
+Iteration   3: 7388.854 ms/op
+Iteration   4: 8917.893 ms/op
+Iteration   5: 15485.736 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.autoBoxingExecute":
+  9204.975 ±(99.9%) 3991.408 ms/op [Average]
+  (min, avg, max) = (6090.493, 9204.975, 15485.736), stdev = 2640.069
+  CI (99.9%): [5213.567, 13196.384] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.autoBoxingExecute
+# Parameters: (max = 10000000)
+
+# Run progress: 11.11% complete, ETA 00:40:44
+# Fork: 1 of 2
+# Warmup Iteration   1: 59.444 ms/op
+# Warmup Iteration   2: 60.653 ms/op
+# Warmup Iteration   3: 58.653 ms/op
+# Warmup Iteration   4: 57.811 ms/op
+# Warmup Iteration   5: 58.820 ms/op
+Iteration   1: 57.296 ms/op
+Iteration   2: 58.019 ms/op
+Iteration   3: 57.102 ms/op
+Iteration   4: 65.489 ms/op
+Iteration   5: 59.320 ms/op
+
+# Run progress: 16.67% complete, ETA 00:33:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 62.034 ms/op
+# Warmup Iteration   2: 59.092 ms/op
+# Warmup Iteration   3: 56.865 ms/op
+# Warmup Iteration   4: 59.592 ms/op
+# Warmup Iteration   5: 57.868 ms/op
+Iteration   1: 56.819 ms/op
+Iteration   2: 57.469 ms/op
+Iteration   3: 58.791 ms/op
+Iteration   4: 57.808 ms/op
+Iteration   5: 56.856 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.autoBoxingExecute":
+  58.497 ±(99.9%) 3.914 ms/op [Average]
+  (min, avg, max) = (56.819, 58.497, 65.489), stdev = 2.589
+  CI (99.9%): [54.583, 62.410] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.autoBoxingExecute
+# Parameters: (max = 100000)
+
+# Run progress: 22.22% complete, ETA 00:29:34
+# Fork: 1 of 2
+# Warmup Iteration   1: 0.576 ms/op
+# Warmup Iteration   2: 0.569 ms/op
+# Warmup Iteration   3: 0.551 ms/op
+# Warmup Iteration   4: 0.546 ms/op
+# Warmup Iteration   5: 0.544 ms/op
+Iteration   1: 0.550 ms/op
+Iteration   2: 0.557 ms/op
+Iteration   3: 0.547 ms/op
+Iteration   4: 0.550 ms/op
+Iteration   5: 0.554 ms/op
+
+# Run progress: 27.78% complete, ETA 00:26:19
+# Fork: 2 of 2
+# Warmup Iteration   1: 0.583 ms/op
+# Warmup Iteration   2: 0.573 ms/op
+# Warmup Iteration   3: 0.554 ms/op
+# Warmup Iteration   4: 0.554 ms/op
+# Warmup Iteration   5: 0.557 ms/op
+Iteration   1: 0.548 ms/op
+Iteration   2: 0.562 ms/op
+Iteration   3: 0.566 ms/op
+Iteration   4: 0.559 ms/op
+Iteration   5: 0.557 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.autoBoxingExecute":
+  0.555 ±(99.9%) 0.009 ms/op [Average]
+  (min, avg, max) = (0.547, 0.555, 0.566), stdev = 0.006
+  CI (99.9%): [0.546, 0.564] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.primitiveExecute
+# Parameters: (max = 1000000000)
+
+# Run progress: 33.33% complete, ETA 00:23:35
+# Fork: 1 of 2
+# Warmup Iteration   1: 648.439 ms/op
+# Warmup Iteration   2: 658.654 ms/op
+# Warmup Iteration   3: 643.838 ms/op
+# Warmup Iteration   4: 643.967 ms/op
+# Warmup Iteration   5: 647.435 ms/op
+Iteration   1: 647.431 ms/op
+Iteration   2: 644.697 ms/op
+Iteration   3: 643.856 ms/op
+Iteration   4: 645.015 ms/op
+Iteration   5: 652.166 ms/op
+
+# Run progress: 38.89% complete, ETA 00:21:16
+# Fork: 2 of 2
+# Warmup Iteration   1: 650.312 ms/op
+# Warmup Iteration   2: 646.391 ms/op
+# Warmup Iteration   3: 664.791 ms/op
+# Warmup Iteration   4: 653.675 ms/op
+# Warmup Iteration   5: 642.249 ms/op
+Iteration   1: 656.471 ms/op
+Iteration   2: 642.392 ms/op
+Iteration   3: 648.189 ms/op
+Iteration   4: 644.253 ms/op
+Iteration   5: 645.415 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.primitiveExecute":
+  646.988 ±(99.9%) 6.540 ms/op [Average]
+  (min, avg, max) = (642.392, 646.988, 656.471), stdev = 4.326
+  CI (99.9%): [640.449, 653.528] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.primitiveExecute
+# Parameters: (max = 10000000)
+
+# Run progress: 44.44% complete, ETA 00:19:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 6.480 ms/op
+# Warmup Iteration   2: 6.473 ms/op
+# Warmup Iteration   3: 6.470 ms/op
+# Warmup Iteration   4: 6.480 ms/op
+# Warmup Iteration   5: 6.478 ms/op
+Iteration   1: 6.483 ms/op
+Iteration   2: 6.539 ms/op
+Iteration   3: 6.526 ms/op
+Iteration   4: 6.522 ms/op
+Iteration   5: 6.746 ms/op
+
+# Run progress: 50.00% complete, ETA 00:16:56
+# Fork: 2 of 2
+# Warmup Iteration   1: 6.623 ms/op
+# Warmup Iteration   2: 6.541 ms/op
+# Warmup Iteration   3: 6.534 ms/op
+# Warmup Iteration   4: 6.562 ms/op
+# Warmup Iteration   5: 6.475 ms/op
+Iteration   1: 6.502 ms/op
+Iteration   2: 6.875 ms/op
+Iteration   3: 6.644 ms/op
+Iteration   4: 6.614 ms/op
+Iteration   5: 6.533 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.primitiveExecute":
+  6.598 ±(99.9%) 0.190 ms/op [Average]
+  (min, avg, max) = (6.483, 6.598, 6.875), stdev = 0.126
+  CI (99.9%): [6.408, 6.788] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.primitiveExecute
+# Parameters: (max = 100000)
+
+# Run progress: 55.56% complete, ETA 00:14:53
+# Fork: 1 of 2
+# Warmup Iteration   1: 0.089 ms/op
+# Warmup Iteration   2: 0.087 ms/op
+# Warmup Iteration   3: 0.077 ms/op
+# Warmup Iteration   4: 0.076 ms/op
+# Warmup Iteration   5: 0.077 ms/op
+Iteration   1: 0.076 ms/op
+Iteration   2: 0.075 ms/op
+Iteration   3: 0.075 ms/op
+Iteration   4: 0.075 ms/op
+Iteration   5: 0.074 ms/op
+
+# Run progress: 61.11% complete, ETA 00:12:54
+# Fork: 2 of 2
+# Warmup Iteration   1: 0.090 ms/op
+# Warmup Iteration   2: 0.092 ms/op
+# Warmup Iteration   3: 0.078 ms/op
+# Warmup Iteration   4: 0.075 ms/op
+# Warmup Iteration   5: 0.074 ms/op
+Iteration   1: 0.078 ms/op
+Iteration   2: 0.074 ms/op
+Iteration   3: 0.076 ms/op
+Iteration   4: 0.074 ms/op
+Iteration   5: 0.074 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.primitiveExecute":
+  0.075 ±(99.9%) 0.002 ms/op [Average]
+  (min, avg, max) = (0.074, 0.075, 0.078), stdev = 0.001
+  CI (99.9%): [0.073, 0.077] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.primitiveParallelExecute
+# Parameters: (max = 1000000000)
+
+# Run progress: 66.67% complete, ETA 00:10:58
+# Fork: 1 of 2
+# Warmup Iteration   1: 119.854 ms/op
+# Warmup Iteration   2: 121.525 ms/op
+# Warmup Iteration   3: 119.058 ms/op
+# Warmup Iteration   4: 119.020 ms/op
+# Warmup Iteration   5: 120.636 ms/op
+Iteration   1: 119.881 ms/op
+Iteration   2: 119.797 ms/op
+Iteration   3: 120.564 ms/op
+Iteration   4: 119.341 ms/op
+Iteration   5: 119.452 ms/op
+
+# Run progress: 72.22% complete, ETA 00:09:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 120.641 ms/op
+# Warmup Iteration   2: 119.620 ms/op
+# Warmup Iteration   3: 120.891 ms/op
+# Warmup Iteration   4: 120.596 ms/op
+# Warmup Iteration   5: 119.436 ms/op
+Iteration   1: 120.642 ms/op
+Iteration   2: 120.013 ms/op
+Iteration   3: 119.989 ms/op
+Iteration   4: 119.557 ms/op
+Iteration   5: 119.469 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.primitiveParallelExecute":
+  119.871 ±(99.9%) 0.682 ms/op [Average]
+  (min, avg, max) = (119.341, 119.871, 120.642), stdev = 0.451
+  CI (99.9%): [119.188, 120.553] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.primitiveParallelExecute
+# Parameters: (max = 10000000)
+
+# Run progress: 77.78% complete, ETA 00:07:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 1.291 ms/op
+# Warmup Iteration   2: 1.321 ms/op
+# Warmup Iteration   3: 1.269 ms/op
+# Warmup Iteration   4: 1.262 ms/op
+# Warmup Iteration   5: 1.248 ms/op
+Iteration   1: 1.260 ms/op
+Iteration   2: 1.262 ms/op
+Iteration   3: 1.277 ms/op
+Iteration   4: 1.266 ms/op
+Iteration   5: 1.260 ms/op
+
+# Run progress: 83.33% complete, ETA 00:05:23
+# Fork: 2 of 2
+# Warmup Iteration   1: 1.275 ms/op
+# Warmup Iteration   2: 1.272 ms/op
+# Warmup Iteration   3: 1.262 ms/op
+# Warmup Iteration   4: 1.238 ms/op
+# Warmup Iteration   5: 1.268 ms/op
+Iteration   1: 1.248 ms/op
+Iteration   2: 1.258 ms/op
+Iteration   3: 1.258 ms/op
+Iteration   4: 1.263 ms/op
+Iteration   5: 1.242 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.primitiveParallelExecute":
+  1.259 ±(99.9%) 0.015 ms/op [Average]
+  (min, avg, max) = (1.242, 1.259, 1.277), stdev = 0.010
+  CI (99.9%): [1.245, 1.274] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 21.0.6, OpenJDK 64-Bit Server VM, 21.0.6+7-LTS
+# VM invoker: .../azul-21.0.6/Contents/Home/bin/java
+# VM options: -Xms4G -Xmx4G
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: lkdcode.app.benchmark.ForeachBenchmark.primitiveParallelExecute
+# Parameters: (max = 100000)
+
+# Run progress: 88.89% complete, ETA 00:03:35
+# Fork: 1 of 2
+# Warmup Iteration   1: 0.104 ms/op
+# Warmup Iteration   2: 0.093 ms/op
+# Warmup Iteration   3: 0.082 ms/op
+# Warmup Iteration   4: 0.079 ms/op
+# Warmup Iteration   5: 0.079 ms/op
+Iteration   1: 0.078 ms/op
+Iteration   2: 0.079 ms/op
+Iteration   3: 0.079 ms/op
+Iteration   4: 0.078 ms/op
+Iteration   5: 0.079 ms/op
+
+# Run progress: 94.44% complete, ETA 00:01:47
+# Fork: 2 of 2
+# Warmup Iteration   1: 0.104 ms/op
+# Warmup Iteration   2: 0.093 ms/op
+# Warmup Iteration   3: 0.082 ms/op
+# Warmup Iteration   4: 0.080 ms/op
+# Warmup Iteration   5: 0.080 ms/op
+Iteration   1: 0.080 ms/op
+Iteration   2: 0.079 ms/op
+Iteration   3: 0.080 ms/op
+Iteration   4: 0.080 ms/op
+Iteration   5: 0.080 ms/op
+
+
+Result "lkdcode.app.benchmark.ForeachBenchmark.primitiveParallelExecute":
+  0.079 ±(99.9%) 0.001 ms/op [Average]
+  (min, avg, max) = (0.078, 0.079, 0.080), stdev = 0.001
+  CI (99.9%): [0.078, 0.080] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:32:00
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                       (max)  Mode  Cnt     Score      Error  Units
+ForeachBenchmark.autoBoxingExecute         1000000000  avgt   10  9204.975 ± 3991.408  ms/op
+ForeachBenchmark.autoBoxingExecute           10000000  avgt   10    58.497 ±    3.914  ms/op
+ForeachBenchmark.autoBoxingExecute             100000  avgt   10     0.555 ±    0.009  ms/op
+ForeachBenchmark.primitiveExecute          1000000000  avgt   10   646.988 ±    6.540  ms/op
+ForeachBenchmark.primitiveExecute            10000000  avgt   10     6.598 ±    0.190  ms/op
+ForeachBenchmark.primitiveExecute              100000  avgt   10     0.075 ±    0.002  ms/op
+ForeachBenchmark.primitiveParallelExecute  1000000000  avgt   10   119.871 ±    0.682  ms/op
+ForeachBenchmark.primitiveParallelExecute    10000000  avgt   10     1.259 ±    0.015  ms/op
+ForeachBenchmark.primitiveParallelExecute      100000  avgt   10     0.079 ±    0.001  ms/op
