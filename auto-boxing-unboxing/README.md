@@ -28,10 +28,10 @@
 
 ```java
     @IntrinsicCandidate
-public static Integer valueOf(int i){
-    if(i>=IntegerCache.low&&i<=IntegerCache.high)
-    return IntegerCache.cache[i+(-IntegerCache.low)];
-    return new Integer(i);
+    public static Integer valueOf(int i){
+        if(i>=IntegerCache.low&&i<=IntegerCache.high)
+            return IntegerCache.cache[i+(-IntegerCache.low)];
+        return new Integer(i);
     }
 ```
 
@@ -97,7 +97,7 @@ public final class Primitive {
 }
 ```
 
-- 🔗 [PrimitiveParallel](./src/main/java/task02/Primitive.java) 병렬 스트림으로 구현되어 있다.
+- 🔗 [PrimitiveParallel.foreach()](./src/main/java/task02/PrimitiveParallel.java) 병렬 스트림으로 구현되어 있다.
 
 ```java
 public class PrimitiveParallel {
@@ -132,7 +132,7 @@ $ ./gradlew :auto-boxing-unboxing:jmhJar
 $ java -jar auto-boxing-unboxing-v1.0-jmh.jar
 ```
 
-#### 📊 JMH 벤치마크 결과  
+#### 📊 JMH 벤치마크 결과
 
 | 벤치마크 메서드                                    | (max)         | Mode   | Cnt | Score     | Error       | Units   |
 |---------------------------------------------|---------------|--------|-----|-----------|-------------|---------|
