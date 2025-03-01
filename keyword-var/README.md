@@ -104,7 +104,7 @@ public java.lang.Boolean someMethod();
 
 # 🎯 var 키워드
 
-3항 연산자와 함께 var 키워드를 사용하면 동적으로 타입을 할당할 수 있다.  
+🔗[3항 연산자와 함께 var 키워드를 사용하면 동적으로 타입을 할당할 수 있다.](./src/main/java/task03/Main.java)  
 
 ```java
 final var value = target.length() > 5
@@ -112,8 +112,8 @@ final var value = target.length() > 5
     : LocalDateTime.now();
 ```
 
-위의 코드에서 `value` 는 `String` 타입이 되거나 `LocalDateTime` 타입이 될 수 있다.  
-컴파일, 런타임에 문제가 없으며 동적으로 타입을 할당함과 다름이 없다.  
+위의 코드에서 변수 `value`는 `String` 타입이 되거나 `LocalDateTime` 타입이 될 수 있다.  
+컴파일, 런타임에 문제가 없으며 동적으로 타입을 할당하는 것과 다름이 없다.  
 
 이는 `var` 키워드에 타입 추론으로 가능한 상황이다.  
 자바에서 타입에 대한 유연함은 다양한 개발 기법을 제공해준다.  
@@ -160,9 +160,12 @@ class Main {
 }
 ```
 
-아쉽게도 우리의 생각과 다르게 컴파일 단계에서 에러가 뜬다. `Cannot resolve method 'print(Serializable & Comparable<? extends Comparable<?>>)'`  
-자바에서 오버로딩 메서드의 호출은 컴파일 단계에서 결정되는데, `var` + `삼항 연산자`를 사용한 피연산자는 서로 관련이 없는 타입이므로 컴파일러는 오브젝트 타입으로 추론한다.  
-오브젝트 타입을 받는 메서드를 추가해야 문제없이 동작할 수 있다.  
+아쉽게도 우리의 생각과 다르게 컴파일 단계에서 에러가 뜬다.  
+`Cannot resolve method 'print(Serializable & Comparable<? extends Comparable<?>>)'`  
+자바에서 오버로딩 메서드의 호출은 컴파일 단계에서 결정되는데,  
+`var` + `삼항 연산자`를 사용한 피연산자는 서로 관련이 없는 타입이므로 컴파일러는 오브젝트 타입으로 추론한다.  
+
+오브젝트 타입을 받는 메서드를 추가해야 비로소 문제없이 동작할 수 있다.  
 
 ```java
 static void print(final Object value) {
