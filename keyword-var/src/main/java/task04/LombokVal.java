@@ -3,15 +3,19 @@ package task04;
 import lombok.val;
 
 public class LombokVal {
+    public static void main(String[] args) {
+        val();
+    }
 
-    public void val() {
-        val num1 = 3;
-        val num2 = 6;
+    public static void val() {
+        val str1 = "Hello, ";
+        val str2 = "val!";
+
         /*
-         num1 = 33;
-         num2 = 11;
-
+         str1 = "update string...";
+         str2 = "update string...";
          */
-        System.out.println(num1 + num2);
+
+        System.out.println(str1 + str2);
     }
 }
