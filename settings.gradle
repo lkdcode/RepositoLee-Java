@@ -1,3 +1,6 @@
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
 rootProject.name = 'RepositoLee-Java'
 include 'funtional-interface'
 include 'custom-dsl'
@@ -5,4 +8,5 @@ include 'keyword-final'
 include 'keyword-var'
 include 'auto-boxing-unboxing'
 include 'parallel'
+include 'generic'
 
